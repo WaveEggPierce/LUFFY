@@ -114,8 +114,8 @@ LUFFY/
 - [ ] **luffy/verl/verl/protocol.py:332** - (zhangchi.usc1992) whether to copy
 - [ ] **luffy/verl/verl/single_controller/ray/base.py:439** - create a class with customizable name
 - [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/arg_utils.py:64** - (shengguangming): delete the unused args
-- [ ] **luffy/verl/verl/third_party/vllm/vllm_v_0_3_1/arg_utils.py:147** - (woosuk): Support fine-grained seeds (e.g., seed per request).
-- [ ] **luffy/verl/verl/third_party vllm vllm_v_0_3_1/llm.py:237** - (shengguangming): maybe we can hack the autoregressive logics without only apply post process for better performance
+- [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/arg_utils.py:147** - (woosuk): Support fine-grained seeds (e.g., seed per request).
+- [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm.py:237** - (shengguangming): maybe we can hack the autoregressive logics without only apply post process for better performance
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm.py:241** - (sgm): we can optimize it by making the dataloader yield List[int] without padding.
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm.py:257** - (shengguangming): can be optimzied by rewrite the Sampler._get_logprobs() logits
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm_engine_sp.py:99** - (woosuk): Print more configs in debug mode.
@@ -124,7 +124,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm_engine_sp.py:145** - check get_lora_tokenizer func
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm_engine_sp.py:586** - check this input
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/llm_engine_sp.py:661** - we may not need to decode
-- [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/model_loader.py:67** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
+- [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/model_loader.py:67** - (shengguangming): latest commit in vll fix awq for this function and add load_weights
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/model_loader.py:96** - (pad to be divided by 4)
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/model_loader.py:224** - (zhuohan): Change the get_logits part to a separate stage.
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_3_1/tokenizer.py:56** - (sgm): the lora tokenizer is also passed, but may be different
@@ -176,7 +176,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/llm_engine_sp.py:271** - check whether we should rebuild the CUDAGraph every iter when offload/load KVCache
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/megatron_weight_loaders.py:67** - check megatron
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/megatron_weight_loaders.py:254** - need to implement a general way to deal with prefix
-- [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/megatron_weight_loaders.py:272** - (shengguangming): latest commit in vllm fix awq for this function and add load_weights
+- [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/megatron_weight_loaders.py:272** - (shengguangming): latest commit in vll fix awq for this function and add load_weights
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/model_loader.py:152** - (sgm): This is a hack, we need to register the load_weight() func for each model in vllm
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/model_loader.py:239** - (sgm): This is a hack, we need to register the load_weight() func for each model in vllm
 - [ ] **luffy/verl/verl/third_party vllm vllm v_0_5_4/parallel_state.py:94** - (sgm): deviate from the v0.5.4, not pp now
@@ -228,7 +228,7 @@ LUFFY/
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:632** - check path
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:667** - from remote not implemented yet
 - [ ] **luffy/verl/verl/trainer/ppo/ray_trainer.py:880** - make a canonical logger that supports various backend
-- [ ] **luffy/verl/verl utils/checkpoint/fsdp_checkpoint_manager.py:101** - shall we remove previous ckpt every save?
+- [ ] **luffy/verl/verl/utils/checkpoint/fsdp_checkpoint_manager.py:101** - shall we remove previous ckpt every save?
 - [ ] **luffy/verl/verl utils/checkpoint/fsdp_checkpoint_manager.py:135** - address optimizer is None
 - [ ] **luffy/verl/verl utils/hdfs_io.py:67** - (haibin.lin):
 - [ ] **luffy/verl/verl utils/hdfs_io.py:102** - (haibin.lin):
